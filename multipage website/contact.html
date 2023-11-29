@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>University website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;
+    1,9..40,500;1,9..40,800&family=Poppins:ital,wght@0,300;0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <a href="index.html"> <img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html"> HOME</a> </li>
+                    <li> <a href="about.html"> ABOUT</a> </li>
+                    <li> <a href="course.html"> COURSE</a> </li>
+                    <li> <a href="blog.html"> BLOG</a> </li>
+                    <li> <a href="contact.html"> CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+            
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+    1d15100.679478904276!2d72.9165722685992!3d18.879543793945615!2m3!1
+    f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7da3768f546ab%3A
+    0x390100225c8599f6!2sSaatrahti%20Rd%2C%20Nagaon%2C%20Uran%2C%20Navi%20
+    Mumbai%2C%20Maharashtra%20400702!5e0!3m2!1sen!2sin!4v1701257410951!5m2!
+    1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" 
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<section class="contact-us"></section>
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <span>          
+                     <h5> Saatrahti Rd, Nagaon, Uran </h5>
+                <p>Navi Mumbai, Maharashtra 400702 </p>
+            </span>     
+            </div>
+            <div>
+                <span>          
+                     <h5> +91 7045083209 </h5>
+                <p> Kshitij patil</p>
+            </span>     
+            </div>
+        </div>
+        <div class="contact-col"> 
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your Email ID" required>
+                <input type="text" name="message" placeholder="Subject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type ="submit" class=" hero-btn red-btn ">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+<!----------Footer----------->
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Velit eveniet asperiores veniam, odio laborum eius veritatis.
+         Dolores voluptatum numquam voluptates, repellendus magnam ex 
+         laudantium maxime excepturi quae, voluptas, aliquid debitis! </p>
+         <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+         </div>
+         <p>Made with ❤️ by Kshitij Patil </p>
+
+</section>
+
+
+
+
+
+
+
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
